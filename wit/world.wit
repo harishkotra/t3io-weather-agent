@@ -1,0 +1,20 @@
+package z:tenant-weather@0.1.0;
+
+world tenant-weather {
+    import host:tenant/tenant-context@1.0.0;
+    import host:interfaces/logging@2.1.0;
+    import host:interfaces/kv-store@2.1.0;
+    import host:interfaces/http@2.1.0;
+
+    export contracts;
+}
+
+interface contracts {
+    record generic-input {
+        input: option<list<u8>>,
+        user-profile: option<list<u8>>,
+        context: option<list<u8>>,
+    }
+
+    get-weather: func(req: generic-input) -> result<list<u8>, string>;
+}

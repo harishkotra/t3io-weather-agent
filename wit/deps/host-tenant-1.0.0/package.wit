@@ -1,0 +1,9 @@
+package host:tenant@1.0.0;
+
+interface tenant-context {
+    tenant-did: func() -> list<u8>;
+    contract-id: func() -> u32;
+    calling-user-did: func() -> option<list<u8>>;
+    cluster-timestamp-secs: func() -> u64;
+    seq-no: func() -> u64;
+}

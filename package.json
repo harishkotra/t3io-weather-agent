@@ -1,0 +1,17 @@
+{
+  "name": "z-tenant-weather",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": "Harish Kotra",
+  "scripts": {
+    "deploy": "tsx scripts/deploy-and-invoke.ts"
+  },
+  "dependencies": {
+    "@terminal3/t3n-sdk": "3.9.0",
+    "dotenv": "17.4.2"
+  },
+  "devDependencies": {
+    "tsx": "4.22.4"
+  }
+}
