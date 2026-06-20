@@ -2,6 +2,9 @@
 
 A **privacy-first weather agent** built on [Terminal 3 (T3N)](https://docs.terminal3.io). A Rust TEE contract runs inside an Intel TDX hardware enclave, reads an API key from a sealed key-value store, calls OpenWeatherMap, and returns the weather — **without the API key ever leaving the enclave**.
 
+<img width="1316" height="1012" alt="carbon" src="https://github.com/user-attachments/assets/6320325c-afb6-4650-99a4-740a00c79141" />
+
+
 ```json
 {
   "city": "Tokyo",
